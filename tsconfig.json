@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "strictPropertyInitialization": false,
+    "emitDecoratorMetadata": true,
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "target": "es6",
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+
+    "outDir": "dist",
+    "plugins": [
+      {
+        "name": "typescript-tslint-plugin"
+      }
+    ],
+    "baseUrl": "./",
+
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "root": "./src",
+  "include": ["src/**/*", "next-env.d.ts"],
+  "exclude": [
+    "node_modules",
+    "./node_modules",
+    "./node_modules/*",
+    "./node_modules/@types/node/index.d.ts"
+  ]
+}
